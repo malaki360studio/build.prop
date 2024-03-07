@@ -37,7 +37,7 @@ cp "$dir"/{module,system}.prop "result/$result_base_name/"
 cp -r ./magisk_module_files/* "result/$result_base_name/"
 
 # Create the zip file
-cd "result/$result_base_name" || exit 1
+cd "result/$result_base_name/" || exit 1
 zip -r -q "../../$base_name".zip .
 cd ../..
 
